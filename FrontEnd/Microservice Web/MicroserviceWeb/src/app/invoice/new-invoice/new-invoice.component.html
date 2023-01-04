@@ -1,0 +1,83 @@
+<div class="content-header row">
+  <div class="content-header-left col-md-4 col-12 mb-2">
+    <h3 class="content-header-title">Invoices</h3>
+  </div>
+  <div class="content-header-right col-md-8 col-12">
+    <div class="breadcrumbs-top float-md-right">
+      <div class="breadcrumb-wrapper mr-1">
+        <ol class="breadcrumb" style="background-color: transparent">
+          <li class="breadcrumb-item"><a href="index.html">Home</a>
+          </li>
+          <li class="breadcrumb-item active">Invoice
+          </li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="content-body">
+  <section id="line-awesome-icons">
+    <div class="row">
+      <div class="col-12">
+        <div class="card">
+          <div class="card-header" style="padding: 1.5rem">
+            <h4 class="card-title">Create Invoice </h4>
+            <a class="heading-elements-toggle"><i class="la la-ellipsis-v font-medium-3"></i></a>
+            <div class="heading-elements">
+              <ul class="list-inline mb-0">
+                <li><a data-action="collapse"><i class="ft-minus"></i></a></li>
+                <li><a data-action="reload"><i class="ft-rotate-cw"></i></a></li>
+                <li><a data-action="close"><i class="ft-x"></i></a></li>
+              </ul>
+            </div>
+          </div>
+          <section class="mt-5">
+            <div class="row d-flex justify-content-center">
+              <div class="col-md-8">
+                <div class="card mb-6">
+                  <div class="card-header py-3">
+                    <h5 class="mb-0">Invoice Form</h5>
+                  </div>
+
+                  <div class="card-body">
+                    <form  [formGroup]="form" (ngSubmit)="submitForm()">
+                      <div class="form-outline mb-4">
+                        <label class="form-label" for="customerId">Customer</label>
+                        <select class="form-select" aria-label="Default select example" formControlName="customerId" id="customerId">
+                          <option *ngFor="let customer of customerList" [value]="customer.id">  {{customer.email}} </option>
+                        </select>
+                      </div>
+                      <table formArrayName="products">
+                        <label class="form-label" >Products</label>
+                        <tbody>
+                        <tr *ngFor="let item of getControls().controls;let i=index" [formGroupName]="i">
+                          <td><select  formControlName="id" id="id" class="form-select"  >
+                            <option *ngFor="let prod of productList" [value]="prod.id">  {{prod.name}} </option>
+                          </select>
+                          </td>
+                          <td><input type="number" formControlName="quantity"  class="form-control" id="quantity" > </td>
+                          <td>  <a class="btn btn-danger btn-md "(click)="Removeitem(i)"  style="color: white">Remove</a></td>
+                        </tr>
+                        </tbody>
+                      </table>
+                      <div *ngIf="this.notAvailable" class="alert alert-danger" role="alert" >
+                        <div> Please check available quantity !</div>
+                      </div>
+                      <br>
+                      <div>
+                        <a class="btn btn-success btn-md " (click)="Addnewrow()" style="color: white">Add New </a>
+                      </div>
+                      <hr class="my-4" />
+                      <button class="btn btn-primary btn-md " type="submit" >Submit</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>

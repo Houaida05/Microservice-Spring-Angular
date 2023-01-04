@@ -1,0 +1,140 @@
+<div class="content-header row">
+  <div class="content-header-left col-md-4 col-12 mb-2">
+    <h3 class="content-header-title">Invoices</h3>
+  </div>
+  <div class="content-header-right col-md-8 col-12">
+    <div class="breadcrumbs-top float-md-right">
+      <div class="breadcrumb-wrapper mr-1">
+        <ol class="breadcrumb" style="background-color: transparent">
+          <li class="breadcrumb-item"><a href="index.html">Home</a>
+          </li>
+          <li class="breadcrumb-item active">Invoice
+          </li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="content-body">
+  <section id="line-awesome-icons">
+    <div class="row">
+      <div class="col-12">
+        <div class="card">
+          <div class="card-header" style="padding: 1.5rem">
+            <h4 class="card-title">Invoice Details</h4>
+            <a class="heading-elements-toggle"><i class="la la-ellipsis-v font-medium-3"></i></a>
+            <div class="heading-elements">
+              <ul class="list-inline mb-0">
+                <li><a data-action="collapse"><i class="ft-minus"></i></a></li>
+                <li><a data-action="reload"><i class="ft-rotate-cw"></i></a></li>
+                <li><a data-action="close"><i class="ft-x"></i></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="card-body" style="background-color: #eee;">
+            <section class="container-sm " style="background-color: #eee;">
+              <div id="invoice">
+                <div class="toolbar hidden-print">
+                  <div class="text-right">
+<!--                    <button id="printInvoice" class="btn btn-info"><i class="fa fa-print"></i> Print</button>-->
+                    <button class="btn btn-info" (click)="openPDF()"><i class="fa fa-file-pdf-o"></i> Export as PDF</button>
+                  </div>
+                  <hr>
+                </div>
+                <div class="invoice overflow-auto" id="htmlData">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-12">
+                        <div class="card">
+                          <div class="card-body p-0">
+                            <div class="row p-5">
+<!--                              <div class="col-md-6">-->
+<!--                                <img src="https://www.pngmart.com/files/8/Invoice-PNG-Background-Image.png">-->
+<!--                              </div>-->
+                              <div class="col-md-12  text-right">
+                                <h2 class="font-weight-bold mb-1" >Invoice #00{{invoice.id}}</h2>
+                                <h3 class="text-muted">{{ invoice.invoiceDate | date:'y/MM/d'}}</h3>
+                                <h5> <span *ngIf="invoice.status==true; else unpaid" class="badge badge-pill text-bg-success mt-2 "> Paid</span></h5>
+                                <h5 *ngIf="invoice.status==true;">Payment Type: {{payment.paymentType}}</h5>
+                                <ng-template #unpaid>
+                                  <h4 class="badge text-bg-warning mt-2 "> Unpaid</h4>
+                                </ng-template>
+                              </div>
+                            </div>
+                            <hr>
+                            <div class="row pb-5 p-5">
+                              <div class="col-md-6">
+                                <h4 class="font-weight-bold mb-4">Customer Information</h4>
+                                <p class="mb-1">{{invoice.customer?.lastname}}  {{invoice.customer?.firstname}}</p>
+                                <p>{{invoice.customer?.email}}</p>
+                                <p class="mb-1">{{invoice.customer?.phoneNumber}}</p>
+                              </div>
+
+                              <div class="col-md-6 text-right">
+                                <h3 class="font-weight-bold mb-4">ITStore</h3>
+                                <p class="mb-1"><span class="text-muted">contact@itstore.com </span> </p>
+                                <p class="mb-1"><span class="text-muted">Tunisia, Sfax </span> </p>
+                              </div>
+                            </div>
+
+                            <div class="row p-5">
+                              <div class="col-md-12">
+                                <table class="table">
+                                  <thead>
+                                  <tr>
+                                    <th class="border-0 text-uppercase small font-weight-bold">ID</th>
+                                    <th class="border-0 text-uppercase small font-weight-bold">Item</th>
+                                    <th class="border-0 text-uppercase small font-weight-bold">Description</th>
+                                    <th class="border-0 text-uppercase small font-weight-bold">Quantity</th>
+                                    <th class="border-0 text-uppercase small font-weight-bold">Unit Cost</th>
+                                    <th class="border-0 text-uppercase small font-weight-bold">Total</th>
+                                  </tr>
+                                  </thead>
+                                  <tbody>
+                                  <tr *ngFor="let item of invoice.orders" class="center-align">
+                                    <td>{{item.product.id}}</td>
+                                    <td>{{item.product.name}}</td>
+                                    <td>{{item.product.description}}</td>
+                                    <td>{{item.quantity}}</td>
+                                    <td>{{item.product.price}} DT</td>
+                                    <td>{{item.product.price * item.quantity}} DT</td>
+                                  </tr>
+
+                                  </tbody>
+                                </table>
+                              </div>
+                            </div>
+
+                            <div class="d-flex flex-row-reverse bg-dark text-white p-4">
+                              <div class="py-3 px-5 text-right">
+                                <div class="mb-2">Grand Total</div>
+                                <h2 class="font-weight-bold " >{{invoice.totalSum}} DT</h2>
+                              </div>
+
+<!--                              <div class="py-3 px-5 text-right">-->
+<!--                                <div class="mb-2">Discount</div>-->
+<!--                                <div class="h2 font-weight-light">10%</div>-->
+<!--                              </div>-->
+
+<!--                              <div class="py-3 px-5 text-right">-->
+<!--                                <div class="mb-2">Sub - Total amount</div>-->
+<!--                                <div class="h2 font-weight-light">$32,432</div>-->
+<!--                              </div>-->
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="text-light mt-5 mb-5 text-center small">by : <a class="text-light" target="_blank" href="http://totoprayogo.com">totoprayogo.com</a></div>
+
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>

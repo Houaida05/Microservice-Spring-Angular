@@ -1,0 +1,85 @@
+<div class="content-header row">
+  <div class="content-header-left col-md-4 col-12 mb-2">
+    <h3 class="content-header-title">Payment</h3>
+  </div>
+  <div class="content-header-right col-md-8 col-12">
+    <div class="breadcrumbs-top float-md-right">
+      <div class="breadcrumb-wrapper mr-1">
+        <ol class="breadcrumb" style="background-color: transparent">
+          <li class="breadcrumb-item"><a href="index.html">Home</a>
+          </li>
+          <li class="breadcrumb-item active">Payment
+          </li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="content-body">
+  <section id="line-awesome-icons">
+    <div class="row">
+      <div class="col-12">
+        <div class="card">
+          <div class="card-header" style="padding: 1.5rem">
+            <h4 class="card-title">Pay Invoice </h4>
+            <a class="heading-elements-toggle"><i class="la la-ellipsis-v font-medium-3"></i></a>
+            <div class="heading-elements">
+              <ul class="list-inline mb-0">
+                <li><a data-action="collapse"><i class="ft-minus"></i></a></li>
+                <li><a data-action="reload"><i class="ft-rotate-cw"></i></a></li>
+                <li><a data-action="close"><i class="ft-x"></i></a></li>
+              </ul>
+            </div>
+          </div>
+          <section class="mt-5">
+            <div class="row d-flex justify-content-center">
+              <div class="col-md-8">
+                <div class="card mb-6">
+                  <div class="card-header py-3">
+                    <h5 class="mb-0">Payment Form</h5>
+                  </div>
+                  <div class="card-body">
+                    <form (ngSubmit)="Convert()">
+                      <div class="form-outline mb-4">
+                        <label class="form-label">Currency</label>
+                        <div class="row">
+                        <div class="col-sm-3" *ngIf="invoice">
+<!--                          <input type="money"  class="form-control"  id="amount" name="amount" placeholder="Amount" [(ngModel)]="amount" />-->
+                          {{invoice.totalSum}}
+                        </div>
+                        <div class="col-sm-3">
+                        <select class="form-select" aria-label="Default select example"   id="currency" name="currency" [(ngModel)]="currency"  >
+                          <option *ngFor="let currency of currencies" [ngValue]="currency.k">{{currency.k}}</option>
+                        </select>
+                        </div>
+                          <div class="col-sm-3">
+                            <div id="result" name="result" *ngIf="result">{{result}} </div>
+                          </div>
+                        </div>
+                      </div>
+                      <hr class="my-4"/>
+                      <button class="btn btn-primary btn-md " type="submit">Convert</button>
+                    </form>
+                    <form (ngSubmit)="Pay()">
+                      <div class="form-outline mb-4">
+                        <label class="form-label">Payment Type</label>
+                        <select class="form-select" aria-label="Default select example" id="paymentType"
+                                name="paymentType" [(ngModel)]="payment.paymentType">
+                          <option> Credit Card</option>
+                          <option> Check</option>
+                          <option> Cash</option>
+                        </select>
+                      </div>
+                      <hr class="my-4"/>
+                      <button class="btn btn-primary btn-md " type="submit">Submit</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>

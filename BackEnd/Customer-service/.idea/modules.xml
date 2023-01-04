@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Customer-service.iml" filepath="$PROJECT_DIR$/Customer-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Eureka-discovery-service/Eureka-discovery-service.iml" filepath="$PROJECT_DIR$/../Eureka-discovery-service/Eureka-discovery-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Gateway-service/Gateway-service.iml" filepath="$PROJECT_DIR$/../Gateway-service/Gateway-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Invoice-service/Invoice-service.iml" filepath="$PROJECT_DIR$/../Invoice-service/Invoice-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Payment-service/Payment-service.iml" filepath="$PROJECT_DIR$/../Payment-service/Payment-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Product-service/Product-service.iml" filepath="$PROJECT_DIR$/../Product-service/Product-service.iml" />
+    </modules>
+  </component>
+</project>

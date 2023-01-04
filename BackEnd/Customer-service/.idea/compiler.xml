@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="Customer-service" />
+        <module name="Gateway-service" />
+        <module name="Invoice-service" />
+        <module name="Payment-service" />
+        <module name="Product-service" />
+        <module name="Eureka-discovery-service" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Customer-service" target="1.8" />
+      <module name="Eureka-discovery-service" target="1.8" />
+      <module name="Gateway-service" target="1.8" />
+      <module name="Invoice-service" target="1.8" />
+      <module name="Payment-service" target="1.8" />
+      <module name="Product-service" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="Customer-service" options="-parameters" />
+      <module name="Eureka-discovery-service" options="-parameters" />
+      <module name="Gateway-service" options="-parameters" />
+      <module name="Invoice-service" options="-parameters" />
+      <module name="Payment-service" options="-parameters" />
+      <module name="Product-service" options="-parameters" />
+    </option>
+  </component>
+</project>

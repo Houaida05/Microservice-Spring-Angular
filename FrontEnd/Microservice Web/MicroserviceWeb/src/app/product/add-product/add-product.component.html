@@ -1,0 +1,91 @@
+<div class="content-header row">
+  <div class="content-header-left col-md-4 col-12 mb-2">
+    <h3 class="content-header-title">Products</h3>
+  </div>
+  <div class="content-header-right col-md-8 col-12">
+    <div class="breadcrumbs-top float-md-right">
+      <div class="breadcrumb-wrapper mr-1">
+        <ol class="breadcrumb" style="background-color: transparent">
+          <li class="breadcrumb-item"><a href="index.html">Home</a>
+          </li>
+          <li class="breadcrumb-item active">Products
+          </li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="content-body">
+  <section id="line-awesome-icons">
+    <div class="row">
+      <div class="col-12">
+        <div class="card">
+          <div class="card-header" style="padding: 1.5rem">
+            <h4 class="card-title">Create Product </h4>
+            <a class="heading-elements-toggle"><i class="la la-ellipsis-v font-medium-3"></i></a>
+            <div class="heading-elements">
+              <ul class="list-inline mb-0">
+                <li><a data-action="collapse"><i class="ft-minus"></i></a></li>
+                <li><a data-action="reload"><i class="ft-rotate-cw"></i></a></li>
+                <li><a data-action="close"><i class="ft-x"></i></a></li>
+              </ul>
+            </div>
+          </div>
+          <section class="mt-5">
+            <div class="row d-flex justify-content-center">
+              <div class="col-md-8">
+                <div class="card mb-6">
+                  <div class="card-header py-3">
+                    <h5 class="mb-0">Product Form</h5>
+                  </div>
+
+                  <div class="card-body">
+                    <form [formGroup]="form" (ngSubmit)="submitForm()">
+                      <div class="form-outline mb-4">
+                        <label class="form-label" for="form6Example2">Name</label>
+                        <input type="text" id="form6Example2" class="form-control" formControlName="name"/>
+                      </div>
+
+                      <!-- Text input -->
+                      <div class="form-outline mb-4">
+                        <label class="form-label" for="form6Example3">Description</label>
+                        <input type="text" id="form6Example3" class="form-control" formControlName="description"/>
+                      </div>
+
+                      <!-- Text input -->
+                      <div class="form-outline mb-4">
+                        <label class="form-label" for="form6Example4">Quantity</label>
+                        <input type="number" id="form6Example4" class="form-control" formControlName="quantity"/>
+                      </div>
+
+                      <!-- Email input -->
+                      <div class="form-outline mb-4">
+                        <label class="form-label" for="form6Example5">Price</label>
+                        <input type="text" id="form6Example5" class="form-control" formControlName="price"/>
+                      </div>
+
+                      <!-- Number input -->
+                      <div class="form-outline mb-4">
+                        <label class="form-label">Image Upload</label>
+                        <input type="file" class="form-control" formControlName="file" (change)="uploadFile($event)"/>
+                      </div>
+                      <div class="form-outline mb-4">
+                        <label class="form-label">Category</label>
+                        <select class="form-select" aria-label="Default select example" formControlName="category">
+                          <option *ngFor="let cat of categoryList" [value]="cat.id">{{cat.name}}</option>
+                        </select>
+                      </div>
+                      <hr class="my-4"/>
+                      <button class="btn btn-primary btn-md " type="submit">Submit</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
