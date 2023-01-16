@@ -88,4 +88,10 @@ export class AllProductsComponent implements OnInit {
     this.router.navigateByUrl('/product/2/' + c.id);
 
   }
+
+  updateProduct(id: any) {
+   this.productService.putData(id,1).subscribe();
+   this.getProducts('/products');
+
+  }
 }

@@ -32,7 +32,16 @@ export class ProductService {
    getProduct(id:any): Observable<any>{
     return this.http.get<any>(this.baseUrl + '/products/' + id);
   }
+  soldout(): Observable<any>{
+    return this.http.get<any>(this.baseUrl + '/products/soldout');
+  }
+  getProdCateg(): Observable<any>{
+    return this.http.get<any>(this.baseUrl + '/products/categoryprod');
+  }
 
+  putData(id:any,data: any): Observable<any> {
+    return this.http.put(`${this.baseUrl}/products/quantity/`+id, data)
+  }
 }
 
 

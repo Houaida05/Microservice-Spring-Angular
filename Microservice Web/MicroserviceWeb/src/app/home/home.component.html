@@ -1,1 +1,97 @@
-<p>home works!</p>
+
+<div class="content-body">
+  <section id="line-awesome-icons">
+    <div class="row">
+      <div class="col-12">
+
+        <div class="card">
+          <div class="row row-cols-6 row-cols-md-2">
+            <div class="col mb-6">
+              <h4>Revenue</h4>
+
+              <div class="card" *ngIf="tmpArray">
+                <ngx-charts-advanced-pie-chart
+                  [results]="tmpArray"
+                  [gradient]="true"
+                  [view]="[800,300]">
+                </ngx-charts-advanced-pie-chart>
+
+              </div>
+
+            </div>
+            <div class="col mb-4">
+              <h4>Products Sold</h4>
+
+              <div class="card" *ngIf="array">
+
+                <ngx-charts-advanced-pie-chart
+                  [view]="[400,200]"
+                  [results]="array"
+                  [view]="[800,300]">
+
+                </ngx-charts-advanced-pie-chart>
+              </div>
+            </div>
+            <div class="col mb-4">
+              <div class="card">
+                <div class="row pb-5 p-5">
+                  <h4>Sold Out</h4>
+
+                  <div class="col-md-8 text-right">
+                    <table class="table ">
+                      <thead>
+                      <tr class="center-align">
+                        <th>Product Id</th>
+                        <th>Product Name</th>
+                        <th>Product Price</th>
+
+                      </tr>
+                      </thead>
+                      <tbody>
+                      <tr *ngFor="let p of Products">
+                        <td>{{ p.id }}</td>
+                        <td>{{ p.name}}</td>
+                        <td>{{ p.price}}</td>
+
+                      </tbody>
+                    </table>
+                  </div>
+            </div>
+
+              </div>
+            </div>
+            <div class="col mb-4">
+              <div class="card">
+                <div class="card-body">
+                  <div class="container" *ngIf="tmpArray">
+                    <ngx-charts-pie-grid
+                      [results]="categoryProd"
+                      [view]="[600,400]"
+                    >
+                    </ngx-charts-pie-grid>
+                    <ngx-charts-bar-vertical
+                      [view]="[600,400]"
+                      [results]="categoryProd"
+                      [xAxisLabel]="'Products'"
+                      [legendTitle]="'Product Sale Chart'"
+                      [yAxisLabel]="'Sale'"
+                      [legend]="true"
+                      [showXAxisLabel]="true"
+                      [showYAxisLabel]="true"
+                      [xAxis]="true"
+                      [yAxis]="true"
+                      [gradient]="true">
+                    </ngx-charts-bar-vertical>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+</div>
+
+    </div></section>
+</div>

@@ -19,6 +19,7 @@ public class OrderItem {
     @GeneratedValue(strategy= GenerationType.IDENTITY)
     private Long id;
     private Long productId;
+    private String productName;
     private long quantity;
     private double price;
     @Transient

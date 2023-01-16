@@ -10,9 +10,11 @@ import {InvoiceComponent} from "./invoice/all-invoice/invoice.component";
 import {NewInvoiceComponent} from "./invoice/new-invoice/new-invoice.component";
 import {InvoiceDetailsComponent} from "./invoice/invoice-details/invoice-details.component";
 import {PaymentComponent} from "./payment/payment/payment.component";
+import {CustomerDetailsComponent} from "./customer/customer-details/customer-details.component";
+
 
 const routes: Routes = [
-  {path : 'home', component: HomeComponent},
+  {path : '', component: HomeComponent},
   {path: 'product/:p1/:p2', component: AllProductsComponent},
   {path:'product', redirectTo:'product/1/0', pathMatch:'full'},
   {path: 'addProduct', component: AddProductComponent},
@@ -22,6 +24,8 @@ const routes: Routes = [
   {path: 'newInvoice', component: NewInvoiceComponent},
   {path: 'viewinvoice/:id', component: InvoiceDetailsComponent},
   {path: 'payment/:id', component: PaymentComponent},
+  {path: 'details/:id', component: CustomerDetailsComponent},
+
 
 
 

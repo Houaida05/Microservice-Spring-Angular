@@ -8,15 +8,16 @@ import { EditProductComponent } from './product/edit-product/edit-product.compon
 import { ViewProductComponent } from './product/view-product/view-product.component';
 import { AppRoutingModule } from './app-routing.module';
 import { AllProductsComponent } from './product/all-products/all-products.component';
-import {HttpClient, HttpClientModule} from "@angular/common/http";
+import { HttpClientModule} from "@angular/common/http";
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import { AllCustomersComponent } from './customer/all-customers/all-customers.component';
 import { AddCustomerComponent } from './customer/add-customer/add-customer.component';
-import {ActivatedRoute} from "@angular/router";
 import { InvoiceComponent } from './invoice/all-invoice/invoice.component';
 import { NewInvoiceComponent } from './invoice/new-invoice/new-invoice.component';
 import { InvoiceDetailsComponent } from './invoice/invoice-details/invoice-details.component';
 import { PaymentComponent } from './payment/payment/payment.component';
+import {NgxChartsModule} from "@swimlane/ngx-charts";
+import { CustomerDetailsComponent } from './customer/customer-details/customer-details.component';
 
 
 @NgModule({
@@ -33,6 +34,7 @@ import { PaymentComponent } from './payment/payment/payment.component';
     NewInvoiceComponent,
     InvoiceDetailsComponent,
     PaymentComponent,
+    CustomerDetailsComponent,
   ],
   imports: [
     BrowserModule,
@@ -40,6 +42,7 @@ import { PaymentComponent } from './payment/payment/payment.component';
     HttpClientModule,
     ReactiveFormsModule,
     FormsModule,
+   NgxChartsModule
 
   ],
   providers: [],

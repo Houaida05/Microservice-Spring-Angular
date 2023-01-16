@@ -9,7 +9,6 @@ import org.springframework.web.bind.annotation.*;
 public interface ProductServiceClient {
     @GetMapping(path = "/products/{id}")
     Product findProductById(@PathVariable(name = "id") Long id);
-
     @GetMapping(path="/products")
     PagedModel<Product> getAllProducts();
     @PutMapping(path = "/products/{id}")

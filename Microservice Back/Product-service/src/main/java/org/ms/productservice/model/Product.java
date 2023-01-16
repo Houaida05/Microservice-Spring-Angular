@@ -1,16 +1,15 @@
 package org.ms.productservice.model;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
-import lombok.ToString;
+import com.fasterxml.jackson.annotation.JsonBackReference;
+import lombok.*;
 
 import javax.persistence.*;
 import java.io.Serializable;
 @Entity
 @NoArgsConstructor
 @AllArgsConstructor
-@Data
+@Getter
+@Setter
 @ToString
 public class Product implements Serializable {
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -20,6 +19,7 @@ public class Product implements Serializable {
     private Long price;
     private Integer quantity;
     private String image;
+    @JsonBackReference
     @ManyToOne
     private Category category;
 

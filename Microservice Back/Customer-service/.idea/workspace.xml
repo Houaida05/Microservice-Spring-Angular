@@ -5,77 +5,105 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="faa88e3d-da43-4f72-bbbe-0c33a0875de9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../Eureka-discovery-service/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Eureka-discovery-service/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Eureka-discovery-service/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Eureka-discovery-service/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Eureka-discovery-service/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Eureka-discovery-service/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Eureka-discovery-service/src/main/java/org/ms/eurekadiscoveryservice/EurekaDiscoveryServiceApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Eureka-discovery-service/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Eureka-discovery-service/src/test/java/org/ms/eurekadiscoveryservice/EurekaDiscoveryServiceApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Gateway-service/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Gateway-service/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Gateway-service/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Gateway-service/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Gateway-service/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Gateway-service/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Gateway-service/src/main/java/org/ms/gatewayservice/GatewayServiceApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Gateway-service/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Gateway-service/src/test/java/org/ms/gatewayservice/GatewayServiceApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Invoice-service/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Invoice-service/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Invoice-service/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Invoice-service/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Invoice-service/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Invoice-service/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Invoice-service/src/main/java/org/ms/invoiceservice/InvoiceServiceApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Invoice-service/src/main/java/org/ms/invoiceservice/controller/InvoiceRestController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Invoice-service/src/main/java/org/ms/invoiceservice/dto/InvoiceRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Invoice-service/src/main/java/org/ms/invoiceservice/dto/ProductItem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Invoice-service/src/main/java/org/ms/invoiceservice/feign/CustomerServiceClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Invoice-service/src/main/java/org/ms/invoiceservice/feign/ProductServiceClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Invoice-service/src/main/java/org/ms/invoiceservice/model/Customer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Invoice-service/src/main/java/org/ms/invoiceservice/model/Invoice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Invoice-service/src/main/java/org/ms/invoiceservice/model/OrderItem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Invoice-service/src/main/java/org/ms/invoiceservice/model/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Invoice-service/src/main/java/org/ms/invoiceservice/repository/InvoiceRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Invoice-service/src/main/java/org/ms/invoiceservice/repository/OrderItemRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Invoice-service/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Invoice-service/src/test/java/org/ms/invoiceservice/InvoiceServiceApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Payment-service/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Payment-service/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Payment-service/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Payment-service/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Payment-service/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Payment-service/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Payment-service/src/main/java/org/ms/paymentservice/PaymentServiceApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Payment-service/src/main/java/org/ms/paymentservice/controller/DeviseApiController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Payment-service/src/main/java/org/ms/paymentservice/controller/PaymentRestController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Payment-service/src/main/java/org/ms/paymentservice/dto/PaymentRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Payment-service/src/main/java/org/ms/paymentservice/feign/InvoiceServiceClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Payment-service/src/main/java/org/ms/paymentservice/model/Invoice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Payment-service/src/main/java/org/ms/paymentservice/model/Payment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Payment-service/src/main/java/org/ms/paymentservice/pojo/CurrencyConversion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Payment-service/src/main/java/org/ms/paymentservice/pojo/CurrencyPojo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Payment-service/src/main/java/org/ms/paymentservice/repository/PaymentRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Payment-service/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Payment-service/src/test/java/org/ms/paymentservice/PaymentServiceApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Product-service/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Product-service/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Product-service/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Product-service/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Product-service/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Product-service/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Product-service/src/main/java/org/ms/productservice/ProductServiceApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Product-service/src/main/java/org/ms/productservice/controller/ProductRestController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Product-service/src/main/java/org/ms/productservice/model/Category.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Product-service/src/main/java/org/ms/productservice/model/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Product-service/src/main/java/org/ms/productservice/repository/CategoryRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Product-service/src/main/java/org/ms/productservice/repository/ProductRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Product-service/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Product-service/src/test/java/org/ms/productservice/ProductServiceApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_dataformat_jackson_dataformat_yaml_2_13_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_googlecode_javaewah_JavaEWAH_1_1_13.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_8_0_11.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_i2p_crypto_eddsa_0_3_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_sshd_sshd_common_2_7_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_sshd_sshd_core_2_7_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_sshd_sshd_osgi_2_7_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_sshd_sshd_sftp_2_7_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_checkerframework_checker_qual_3_5_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jgit_org_eclipse_jgit_5_13_1_202206130422_r.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jgit_org_eclipse_jgit_http_apache_5_13_1_202206130422_r.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jgit_org_eclipse_jgit_ssh_apache_5_13_1_202206130422_r.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mariadb_jdbc_mariadb_java_client_3_0_8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_postgresql_postgresql_42_3_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jcl_over_slf4j_1_7_36.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_validation_2_7_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_config_client_3_1_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_config_server_3_1_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_bootstrap_3_1_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_config_3_1_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/bootstrap.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Eureka-discovery-service/src/main/resources/bootstrap.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Gateway-service/src/main/resources/bootstrap.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Invoice-service/src/main/java/org/ms/invoiceservice/dto/TotalRevenueCustomer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Invoice-service/src/main/resources/bootstrap.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Payment-service/src/main/resources/bootstrap.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Product-service/src/main/java/org/ms/productservice/dto/TotalProductDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Product-service/src/main/resources/bootstrap.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Microservice Web - Copy/MicroserviceWeb.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Microservice Web - Copy/MicroserviceWeb/.browserslistrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Microservice Web - Copy/MicroserviceWeb/.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Microservice Web - Copy/MicroserviceWeb/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Microservice Web - Copy/MicroserviceWeb/.vscode/extensions.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Microservice Web - Copy/MicroserviceWeb/.vscode/launch.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Microservice Web - Copy/MicroserviceWeb/.vscode/tasks.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Microservice Web - Copy/MicroserviceWeb/12.0.0" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Microservice Web - Copy/MicroserviceWeb/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Microservice Web - Copy/MicroserviceWeb/angular.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Microservice Web - Copy/MicroserviceWeb/karma.conf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Microservice Web - Copy/MicroserviceWeb/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Microservice Web - Copy/MicroserviceWeb/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Microservice Web - Copy/MicroserviceWeb/tsconfig.app.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Microservice Web - Copy/MicroserviceWeb/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Microservice Web - Copy/MicroserviceWeb/tsconfig.spec.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Microservice Web/MicroserviceWeb/12.0.0" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_h2database_h2_2_1_214.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Customer-service.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Customer-service.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eureka-discovery-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Eureka-discovery-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eureka-discovery-service/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Gateway-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Gateway-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Gateway-service/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Invoice-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Invoice-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Invoice-service/src/main/java/org/ms/invoiceservice/controller/InvoiceRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Invoice-service/src/main/java/org/ms/invoiceservice/controller/InvoiceRestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Invoice-service/src/main/java/org/ms/invoiceservice/dto/InvoiceRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Invoice-service/src/main/java/org/ms/invoiceservice/dto/InvoiceRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Invoice-service/src/main/java/org/ms/invoiceservice/dto/ProductItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Invoice-service/src/main/java/org/ms/invoiceservice/dto/ProductItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Invoice-service/src/main/java/org/ms/invoiceservice/feign/CustomerServiceClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Invoice-service/src/main/java/org/ms/invoiceservice/feign/CustomerServiceClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Invoice-service/src/main/java/org/ms/invoiceservice/feign/ProductServiceClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Invoice-service/src/main/java/org/ms/invoiceservice/feign/ProductServiceClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Invoice-service/src/main/java/org/ms/invoiceservice/model/Invoice.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Invoice-service/src/main/java/org/ms/invoiceservice/model/Invoice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Invoice-service/src/main/java/org/ms/invoiceservice/model/OrderItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Invoice-service/src/main/java/org/ms/invoiceservice/model/OrderItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Invoice-service/src/main/java/org/ms/invoiceservice/repository/InvoiceRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Invoice-service/src/main/java/org/ms/invoiceservice/repository/InvoiceRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Invoice-service/src/main/java/org/ms/invoiceservice/repository/OrderItemRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Invoice-service/src/main/java/org/ms/invoiceservice/repository/OrderItemRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Invoice-service/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Payment-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Payment-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Payment-service/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Product-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Product-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Product-service/src/main/java/org/ms/productservice/controller/ProductRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Product-service/src/main/java/org/ms/productservice/controller/ProductRestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Product-service/src/main/java/org/ms/productservice/model/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Product-service/src/main/java/org/ms/productservice/model/Category.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Product-service/src/main/java/org/ms/productservice/model/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Product-service/src/main/java/org/ms/productservice/model/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Product-service/src/main/java/org/ms/productservice/repository/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Product-service/src/main/java/org/ms/productservice/repository/ProductRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Product-service/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Microservice Web/MicroserviceWeb/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../Microservice Web/MicroserviceWeb/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Microservice Web/MicroserviceWeb/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../Microservice Web/MicroserviceWeb/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Microservice Web/MicroserviceWeb/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../Microservice Web/MicroserviceWeb/src/app/app-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Microservice Web/MicroserviceWeb/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../Microservice Web/MicroserviceWeb/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Microservice Web/MicroserviceWeb/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../Microservice Web/MicroserviceWeb/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Microservice Web/MicroserviceWeb/src/app/customer/all-customers/all-customers.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../Microservice Web/MicroserviceWeb/src/app/customer/all-customers/all-customers.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Microservice Web/MicroserviceWeb/src/app/home/home.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../Microservice Web/MicroserviceWeb/src/app/home/home.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Microservice Web/MicroserviceWeb/src/app/home/home.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../Microservice Web/MicroserviceWeb/src/app/home/home.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Microservice Web/MicroserviceWeb/src/app/invoice/invoice-details/invoice-details.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../Microservice Web/MicroserviceWeb/src/app/invoice/invoice-details/invoice-details.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Microservice Web/MicroserviceWeb/src/app/payment/payment/payment.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../Microservice Web/MicroserviceWeb/src/app/payment/payment/payment.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Microservice Web/MicroserviceWeb/src/app/payment/payment/payment.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../Microservice Web/MicroserviceWeb/src/app/payment/payment/payment.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Microservice Web/MicroserviceWeb/src/app/product/all-products/all-products.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../Microservice Web/MicroserviceWeb/src/app/product/all-products/all-products.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Microservice Web/MicroserviceWeb/src/app/product/all-products/all-products.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../Microservice Web/MicroserviceWeb/src/app/product/all-products/all-products.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Microservice Web/MicroserviceWeb/src/app/service/customer.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../Microservice Web/MicroserviceWeb/src/app/service/customer.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Microservice Web/MicroserviceWeb/src/app/service/invoice.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../Microservice Web/MicroserviceWeb/src/app/service/invoice.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Microservice Web/MicroserviceWeb/src/app/service/product.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../Microservice Web/MicroserviceWeb/src/app/service/product.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Microservice Web/MicroserviceWeb/src/app/shared/invoice.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../Microservice Web/MicroserviceWeb/src/app/shared/invoice.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Microservice Web/MicroserviceWeb/src/environments/environment.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../Microservice Web/MicroserviceWeb/src/environments/environment.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Microservice Web/MicroserviceWeb/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../Microservice Web/MicroserviceWeb/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Microservice Web/MicroserviceWeb/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../Microservice Web/MicroserviceWeb/tsconfig.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,7 +119,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../Invoice-service" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
     <option name="ROOT_SYNC" value="SYNC" />
   </component>
   <component name="JpbToolWindowState">
@@ -127,33 +155,37 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelOrder2&quot;: &quot;2&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth2&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;1.8&quot;,
-    &quot;last_opened_file_path&quot;: &quot;G:/AL_CA2/Workspace/facture-service&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reactor&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;127580781bb9cb48667e6aca6146319f&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelOrder2": "2",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RequestMappingsPanelWidth2": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "jdk.selected.JAVA_MODULE": "1.8",
+    "last_opened_file_path": "G:/AL_CA2/Project Spring Microservice/Microservice Back/Configuration-service",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "editor.preferences.fonts.default",
+    "spring.configuration.checksum": "1dffdb91febf8c9fbf20fb175bf1bbe8"
   }
-}</component>
+}]]></component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="org.ms.invoiceservice.dto" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.ms.productservice.dto" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -163,7 +195,14 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.InvoiceServiceApplication">
+  <component name="RunManager" selected="Spring Boot.ProductServiceApplication">
+    <configuration name="ConfigServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="config-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.ms.configservice.ConfigServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CustomerServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <option name="ACTIVE_PROFILES" />
       <module name="Customer-service" />
@@ -214,6 +253,7 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Spring Boot.ConfigServiceApplication" />
       <item itemvalue="Spring Boot.PaymentServiceApplication" />
       <item itemvalue="Spring Boot.EurekaDiscoveryServiceApplication" />
       <item itemvalue="Spring Boot.GatewayServiceApplication" />
@@ -292,6 +332,11 @@
       <workItem from="1672737298757" duration="281000" />
       <workItem from="1672739413818" duration="35000" />
       <workItem from="1672768284283" duration="1121000" />
+      <workItem from="1672831139797" duration="18690000" />
+      <workItem from="1673726206934" duration="15731000" />
+      <workItem from="1673763062864" duration="9172000" />
+      <workItem from="1673775405417" duration="7000" />
+      <workItem from="1673867978663" duration="48000" />
     </task>
     <servers />
   </component>
@@ -308,6 +353,16 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$" />
+      <path value="$PROJECT_DIR$/../Eureka-discovery-service" />
+      <path value="$PROJECT_DIR$/../Gateway-service" />
+      <path value="$PROJECT_DIR$/../Invoice-service" />
+      <path value="$PROJECT_DIR$/../Payment-service" />
+      <path value="$PROJECT_DIR$/../Product-service" />
+    </ignored-roots>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -59,8 +59,10 @@
                       <td>{{ customer.email }}</td>
                       <td>{{ customer.phoneNumber }}</td>
                       <td>
-                        <a (click) =deleteCustomer(customer.id) class = "btn btn-bg-gradient-x-red-pink">
+                        <a (click) =deleteCustomer(customer.id) class="btn btn-sm btn-bg-gradient-x-red-pink mr-1">
                           <i class="ft-trash"> </i></a>
+                        <a [routerLink]="['/details/',customer.id]" class = "btn btn-sm btn-bg-gradient-x-red-pink ml-1">
+                          <i class="ft-info"> </i></a>
                       </td>
                     </tr>
                     </tbody>

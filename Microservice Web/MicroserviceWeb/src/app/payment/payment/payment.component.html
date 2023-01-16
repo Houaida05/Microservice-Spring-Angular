@@ -45,7 +45,7 @@
                         <div class="row">
                         <div class="col-sm-3" *ngIf="invoice">
 <!--                          <input type="money"  class="form-control"  id="amount" name="amount" placeholder="Amount" [(ngModel)]="amount" />-->
-                          {{invoice.totalSum}}
+                          {{invoice.totalSum}} DT
                         </div>
                         <div class="col-sm-3">
                         <select class="form-select" aria-label="Default select example"   id="currency" name="currency" [(ngModel)]="currency"  >
@@ -60,6 +60,7 @@
                       <hr class="my-4"/>
                       <button class="btn btn-primary btn-md " type="submit">Convert</button>
                     </form>
+                    <br>
                     <form (ngSubmit)="Pay()">
                       <div class="form-outline mb-4">
                         <label class="form-label">Payment Type</label>

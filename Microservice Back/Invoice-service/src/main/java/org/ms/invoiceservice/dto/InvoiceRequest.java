@@ -8,6 +8,5 @@ import java.util.List;
 public class InvoiceRequest {
     private Long customerId=null;
     private List<ProductItem> products=new ArrayList<>();
-
 }
 

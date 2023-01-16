@@ -7,7 +7,8 @@ export const environment = {
   urlProduct: "http://localhost:5050/PRODUCT-SERVICE/",
   urlInvoice: "http://localhost:5050/INVOICE-SERVICE/invoices",
   urlCustomer: "http://localhost:5050/CUSTOMER-SERVICE/customers",
-  urlPayment : "http://localhost:5050/PAYMENT-SERVICE"
+  urlPayment : "http://localhost:5050/PAYMENT-SERVICE",
+  urlOrder: "http://localhost:5050/INVOICE-SERVICE/"
 };
 
 /*

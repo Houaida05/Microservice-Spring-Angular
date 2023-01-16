@@ -16,6 +16,9 @@ export class CustomerService {
   DeleteCustomer(id:any):Observable<any>{
     return this.http.delete<any>(this.baseUrl+'/'+id);
   }
+  GetCustomer(id:any):Observable<any>{
+    return this.http.get<Customer>(this.baseUrl+'/'+id);
+  }
   postData(data:any):Observable<Customer>{
     return this.http.post<any>(this.baseUrl, data);
   }

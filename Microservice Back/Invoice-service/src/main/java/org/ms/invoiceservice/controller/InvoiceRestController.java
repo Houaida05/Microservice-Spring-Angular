@@ -2,6 +2,8 @@ package org.ms.invoiceservice.controller;
 
 import feign.Param;
 import lombok.RequiredArgsConstructor;
+import org.ms.invoiceservice.dto.TotalProductDTO;
+import org.ms.invoiceservice.dto.TotalRevenueCustomer;
 import org.ms.invoiceservice.model.Customer;
 import org.ms.invoiceservice.dto.InvoiceRequest;
 import org.ms.invoiceservice.model.Product;
@@ -16,6 +18,8 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.Arrays;
 import java.util.Date;
+import java.util.List;
+
 @RestController
 @RequiredArgsConstructor
 public class InvoiceRestController {
@@ -45,6 +49,7 @@ public class InvoiceRestController {
             Product product=productServiceClient.findProductById(p.getId());
             order.setProductId(product.getId());
             order.setPrice(product.getPrice());
+            order.setProductName(product.getName());
             order.setQuantity(p.getQuantity());
             product.setQuantity((int) (product.getQuantity() - order.getQuantity()));
             order.setProduct(product);
@@ -57,6 +62,7 @@ public class InvoiceRestController {
             invoice.setCustomer(customer);
             invoice.setInvoiceDate(new Date());
             invoice.setCustomerId(customer.getId());
+            invoice.setCustomerName(customer.getEmail());
             invoiceRepository.save(invoice);
 
     }
@@ -70,6 +76,41 @@ public class InvoiceRestController {
     {
         invoiceRepository.updateStatus(invoiceId);
     }
+
+    @GetMapping(path = "/customersRevenue/{customerId}/{year}")
+    public double revenueByYear(@PathVariable("customerId") Long customerId, @PathVariable("year") int year )
+    {
+        return invoiceRepository.getSalesRevenueByYear(customerId,year);
+    }
+    @GetMapping(path = "/customersRevenue/{customerId}")
+    public double revenue(@PathVariable("customerId") Long customerId )
+    {
+        return invoiceRepository.getSalesRevenue(customerId);
+    }
+    @GetMapping(path = "/customersRestUnpaid/{customerId}")
+    public double unpaidAmount(@PathVariable("customerId") Long customerId )
+    {
+        return invoiceRepository.getRestUnpaid(customerId);
+    }
+    @GetMapping(path = "/unpaidInvoices/{customerId}")
+    public List<Invoice> unpaidInvoices( @PathVariable("customerId")  Long customerId )
+    {
+        return invoiceRepository.getInvoicesByCustomerIdAndStatus(customerId, false);
+    }
+    @GetMapping(path = "/paidInvoices/{customerId}")
+    public List<Invoice> paidInvoices( @PathVariable("customerId")  Long customerId )
+    {
+        return invoiceRepository.getInvoicesByCustomerIdAndStatus(customerId, true);
+    }
+    @GetMapping("/productOrdered")
+    public List<TotalProductDTO> getproduct (){
+        return orderItemRepository.countTotalProductOrdered();
+    }
+    @GetMapping("/countTotalrevenue")
+    public List<TotalRevenueCustomer> getrevenue (){
+        return invoiceRepository.countTotalrevenue();
+    }
+
 }
 
 

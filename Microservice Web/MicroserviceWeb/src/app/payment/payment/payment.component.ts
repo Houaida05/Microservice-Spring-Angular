@@ -24,7 +24,7 @@ export class PaymentComponent implements OnInit {
     this.payment.invoiceId= this.route.snapshot.paramMap.get('id');
     this.getCurrencies();
     this.invoiceService.getInvoice(this.payment.invoiceId).subscribe(data=>this.invoice=data)
-    console.log(this.invoice)
+
   }
     Pay(){
       this.paymentService.postData(this.payment).subscribe(data =>this.router.navigate(['/invoice']));

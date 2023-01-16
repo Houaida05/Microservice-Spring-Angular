@@ -1,11 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="VcsDirectoryMappings">
-    <mapping directory="$PROJECT_DIR$" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/../Eureka-discovery-service" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/../Gateway-service" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/../Invoice-service" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/../Payment-service" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/../Product-service" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../.." vcs="Git" />
   </component>
 </project>

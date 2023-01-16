@@ -1,0 +1,190 @@
+
+<div class="content-header row">
+  <div class="content-header-left col-md-4 col-12 mb-2">
+    <h3 class="content-header-title">Invoices</h3>
+  </div>
+  <div class="content-header-right col-md-8 col-12">
+    <div class="breadcrumbs-top float-md-right">
+      <div class="breadcrumb-wrapper mr-1">
+        <ol class="breadcrumb" style="background-color: transparent">
+          <li class="breadcrumb-item"><a href="index.html">Home</a>
+          </li>
+          <li class="breadcrumb-item active">Customer
+          </li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="content-body">
+  <section id="line-awesome-icons">
+    <div class="row">
+      <div class="col-12">
+        <div class="card">
+          <div class="card-header" style="padding: 1.5rem">
+            <h4 class="card-title">Customer Statistics</h4>
+            <a class="heading-elements-toggle"><i class="la la-ellipsis-v font-medium-3"></i></a>
+            <div class="heading-elements">
+              <ul class="list-inline mb-0">
+                <li><a data-action="collapse"><i class="ft-minus"></i></a></li>
+                <li><a data-action="reload"><i class="ft-rotate-cw"></i></a></li>
+                <li><a data-action="close"><i class="ft-x"></i></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="card-body" style="background-color: #eee;">
+            <section class="container-sm " style="background-color: #eee;">
+              <div id="invoice">
+
+                <div class="invoice overflow-auto" id="htmlData">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-12">
+                        <div class="card">
+                          <div class="card-title">
+                            Paid Invoices
+                          </div>
+                          <div class="card-body p-0">
+
+
+
+                            <div class="row pb-5 p-5">
+
+                              <div class="col-md-6 text-right">
+                                <table class="table ">
+                                  <thead>
+                                  <tr class="center-align">
+                                    <th>Invoice Id</th>
+                                    <th>Invoice Date</th>
+                                    <th>Invoice Amount</th>
+                                  </tr>
+                                  </thead>
+                                  <tbody>
+                                  <tr *ngFor="let invoice of paidinvoices">
+                                    <td>{{ invoice.id }}</td>
+                                    <td>{{ invoice.invoiceDate | date:'y/MM/d'}}</td>
+                                    <td>{{ invoice.totalSum }} DT</td></tr>
+                                  </tbody>
+                                </table>
+                              </div>
+                            </div>
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-12">
+                        <div class="card">
+                          <div class="card-title">
+                            Unpaid Invoices
+                          </div>
+                          <div class="card-body p-0">
+
+
+
+                            <div class="row pb-5 p-5">
+
+                              <div class="col-md-6 text-right">
+                                <table class="table ">
+                                  <thead>
+                                  <tr class="center-align">
+                                    <th>Invoice Id</th>
+                                    <th>Invoice Date</th>
+                                    <th>Invoice Amount</th>
+                                  </tr>
+                                  </thead>
+                                  <tbody>
+                                  <tr *ngFor="let invoice of unpaidinvoices">
+                                    <td>{{ invoice.id }}</td>
+                                    <td>{{ invoice.invoiceDate | date:'y/MM/d'}}</td>
+                                    <td>{{ invoice.totalSum }} DT</td></tr>
+                                  </tbody>
+                                </table>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-12">
+                        <div class="card">
+                          <div class="card-title">
+                            Revenue Per year
+                          </div>
+                          <div class="card-body p-0">
+
+
+
+                            <div class="row pb-5 p-5">
+
+                              <div class="col-md-6 ">
+                                <form (ngSubmit)="submitForm()">
+                                  <label class="form-label" for="year">Revenue By year</label>
+                                  <br>
+                                  <select class="form-select" aria-label="Default select example"  id="year"   name="year" [(ngModel)]="year">
+                                    <option *ngFor="let y of availableYears" [value]="y" >  {{y}} </option>
+                                  </select>
+                                  <br>
+                                  <button class="btn btn-primary btn-md " type="submit" >Submit</button>
+
+                                </form>
+                                <br>
+                                <p> {{revenue}}</p>
+                              </div>
+                            </div>
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-12">
+                        <div class="card">
+                          <div class="card-title">
+                            Rest Unpaid
+                          </div>
+                          <div class="card-body p-0">
+
+
+
+                            <div class="row pb-5 p-5">
+
+                              <div class="col-md-6 ">
+                                <p> {{rest}}</p>
+
+                              </div>
+                            </div>
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+
+                    <div class="text-light mt-5 mb-5 text-center small">by : <a class="text-light" target="_blank" href="http://totoprayogo.com">totoprayogo.com</a></div>
+
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+
+
+
+---
+
+
+
+
+
+
+

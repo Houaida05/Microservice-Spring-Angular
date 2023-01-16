@@ -10,4 +10,5 @@ export class Invoice {
   orders: InvoiceRequest[] | undefined
   customer: Customer | undefined
   customerId: any| undefined
+  customerName:any;
 }

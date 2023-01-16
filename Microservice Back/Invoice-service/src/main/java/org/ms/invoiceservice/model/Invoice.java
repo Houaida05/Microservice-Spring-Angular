@@ -25,6 +25,7 @@ public class Invoice {
     @Transient
     private Customer customer;
     private Long customerId;
+    private String customerName;
 
 }
 
